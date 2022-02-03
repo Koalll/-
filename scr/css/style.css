@@ -29,9 +29,387 @@ nav{
   text-transform: uppercase;
 }
 .main {
-  background-image: url(../img/boy.png) no-repeat ,url(../img/bg.jpg) ;
   width: 100%;
   height: calc(100% - 60px);
-  
+  background: url(../img/boy.png) 90% 100%/auto 85% no-repeat , url(../img/bg.jpg) center/cover no-repeat;
+}
+.title_container  {
+  /* float: left;                   ошибка где то здесь */
+  margin: 430px 0px 0px 400px;
+  text-align: center;
+  color: #2c384a;
+}
+.title_container h1 {
+  font-size: 60px;
+  font-weight: bold;
+}
+.title_container h4 {
+  font-size: 20px;
+  color: #79818d;
+  margin-top: 35px;
+}
+.title_container input {
+  height: 40px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #6d7682;
+  background: none;
+  color: #6d7682;
+  font-size: 13px;
+  padding: 0 20px;
+  margin: 60px 15px;
+}
 
+/* моя информация main_info */
+
+.main_info h2 {
+  font-size: 25px;
+  text-align: center;
+  margin: 110px 0 30px 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #2f4667;
+}
+.b {
+  border: 3px solid  #d17700;
+  width: 70px;
+  margin-left: 945px;
+  
+}
+.main_info img {
+  display: block;
+  margin: 50px auto 25px auto;
+  
+}
+.main_info h4 {
+  font-size: 15px;
+  color: #3f495a;
+  margin-left:600px;
+  padding-bottom: 35px;
+}
+
+.main_info input {
+ margin: 0 0 100px 910px;
+ height: 30px;
+ padding: 0 12px 0 30px;
+ text-align: center;
+ border: 2px solid #79818d;
+ border-radius: 3px;
+ color: #79818d;
+ background: url(../img/dow.png) 7% no-repeat;
+
+}
+
+/* что я имею main_work */
+
+.main_work {
+  background: url(../img/картинка\ фона.png) center/cover no-repeat;
+  height: 520px;
+}
+
+.main_work h2 {
+  font-size: 25px;
+  text-align: center;
+  padding: 105px 0 30px 0;
+  
+  font-weight: bold;
+  color: #2f4667;
+}
+
+.main_works {
+   margin: 110px 0 0 420px;
+   height: 420px;
+}
+.main__works {
+  width: 215px;
+  float: left;
+  text-align: center;
+  margin-right: 85px;
+}
+.main__works h3 {
+  color: #d17700;
+  font-size: 18px;
+  margin: 35px 0 22px 0;
+}
+.main__works h4 {
+   color: #4b5565;
+   font-size: 16px;
+   line-height: 1.2em;
+}
+
+/* мои кейсы main_case */
+
+.main_case {
+  margin-bottom: 200px;
+}
+
+.main_case h2 {
+  font-size: 25px;
+  text-align: center;
+  padding: 105px 0 30px 0;
+  font-weight: bold;
+  color: #2f4667;
+}
+.main_case h4 {
+   color: #4b5565;
+   font-size: 16px;
+   text-align: center;
+   margin: 35px 0 40px 0;
+}
+  
+ 
+.main_cases {
+  float: left;
+  margin-left: 390px;
+  padding-right: 90px;
+
+}
+.main_cases h3 {
+  color: #384354;
+  font-size: 25px;
+  margin-bottom: 15px;
+  
+}
+.main_cases p {
+  color: #79818d;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.main_cases input {
+  color: #ffffff;
+  font-size:20px;
+  height: 44px;
+  background: #4cb4ab;
+  text-align: center;
+  padding: 0 42px;
+  border-radius: 3px;
+}
+.list h3 {
+  font-size: 25px;
+  color: #2c384a;
+  padding-bottom: 12px;
+}
+.list h5 {
+  font-size: 20px;
+  color: #4c5565;
+  line-height: 1.4em;
+}
+
+ /* Расчет стоимости main_payment */
+
+ .main_payment h2 {
+    text-align: center;
+    font-size: 45px;
+    color: #2c384a;
+    padding-bottom: 60px;
+ }
+ .main__payment {
+   margin-left: 495px;
+   padding-bottom: 156px;
+ }
+ .main__payment h3 {
+  font-size: 30px;
+  color: #2c384a;
+  padding-bottom: 22px;
+ }
+ .main__payment select {
+   font-size: 16px;
+   color: #737373;
+   padding-bottom: 50px;
+   width: 885px;
+   border: 2px solid #fff;
+   background: #eeeeee;
+   padding: 23px 5px 23px 5px;
+   margin-bottom: 37px;
+ }
+ .pol {
+   border: 2px solid #d1d1d1;
+   width: 860px;
+   margin: 23px;
+ }
+ .main__payment p {
+   color: #384354;
+   font-size: 20px;
+   padding-bottom: 15px;
+   width: 885px;
+ }
+ .main__payment span {
+   color: #49515d;
+   margin-left:  870px;
+   font-size: 18px;
+}
+
+/* моя статистика main_statistics */
+
+.main_statistics {
+ background: url(../img/фон\ статик.png) center/cover no-repeat;
+ height: 500px;
+ 
+}
+.main_statistics h2 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 45px;
+    color: #2c384a;
+    padding: 105px 0 33px 0;
+}
+.main_statisticss {
+  margin: 88px 0 0 430px;
+  
+}
+.main__statisticss {
+  width: 215px;
+  float: left;
+  text-align: center;
+  margin-right: 85px;
+  
+}
+.main__statisticss img {
+  margin-bottom: 30px;
+}
+.main__statisticss span {
+   font-weight: bold;
+   font-size: 40px;
+   color: #323e4f;
+}
+.main__statisticss p {
+  font-size: 20px;
+  color: #323e4f;
+  padding-top: 30px;
+}
+
+/* отзывы main reviews */
+
+
+.main_reviews h2 {
+  text-align: center;
+  font-size: 33px;
+  color: #2c384a;
+  padding: 100px 0 0px 0;
+  margin-bottom: 30px;
+  
+}
+
+.main_reviews {
+  background: url(../img/фотка.png) center  no-repeat;
+  
+}
+.main__reviews {
+  padding: 80px;
+  margin: 80px;
+}
+.main__reviews p {
+  font-size: 16px;
+  color: #414c5b;
+  text-align: center;
+  margin: 10px;
+  line-height: 1.4em;
+  
+}
+
+.round {
+margin-left: 800px;
+
+
+}
+.round_ondd {
+  float: left;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  background: #d17700;
+  color: darkorange;
+  width: 0.8%;
+  height: 0.1%;
+  padding-left: 13px;
+  margin-right: 3px;
+}
+
+
+  .round_ond {
+    float: left;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  background: #d1d1d1;
+  color: #d1d1d1;
+  width: 0.8%;
+  height: 0.1%;
+  padding-left: 13px;
+  margin-right: 3px;
+}
+
+/* мои контакты main contacts */
+
+.main_contacts {
+ background: url(../img/Фон3.png) center/cover no-repeat;
+ height: 808px;
+ color: #fff;
+}
+.main_contacts h2 {
+  text-align: center;
+  font-size: 33px;
+  letter-spacing:1px;
+  padding: 100px 0 0px 0;
+  margin-bottom: 30px;
+}
+.main_contac_p {
+  font-size: 16px;
+  text-align: center;
+  margin: 30px 0 46px 0;
+  letter-spacing: 1px;
+}
+
+.main__contacts {
+  margin-left: 655px;
+  
+}
+.main__contacts p{
+  margin-top: 25px;
+}
+.tell {
+  float: left;
+  text-align: center;
+  margin-right: 108px;
+  
+}
+.formaa h3 {
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  margin: 30px 0 45px 0;
+}
+.formaa {
+
+}
+.formaa_input1 {
+  width: 353px;
+  height: 33px;
+  margin-left: 620px;
+  background: #d2d5dc;
+  padding: 7px;
+  
+}
+.formaa_input {
+width: 360px;
+height: 33px;
+margin-left:16px;
+background: #d2d5dc;
+padding: 7px;
+}
+.formaa textarea {
+width: 733px;
+height: 95px;
+background: #d2d5dc;
+padding: 7px;
+margin: 18px 0 30px 620px;
+}
+.sub input {
+width: 133px;
+padding: 16px;
+margin-left: 920px;
+text-align: center;
+font-size: 20px;
+color: #fff;
+background: no-repeat;
+border: 3px solid #fff;
+border-radius: 3px;
 }
