@@ -5,34 +5,37 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="css/animate.min.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  
 </head>
-<div>
+<body >
+
   <header>
     <nav>
       <div class="logo">Андрей Браун</div>
       <div class="menu">
         <ul>
-          <li>ОБО МНЕ</li>
-          <li>УСЛУГИ</li>
-          <li>КЕЙСЫ</li>
-          <li>ПРАЙС</li>
-          <li>ОТЗЫВЫ</li>
-          <li>КОНТАКТЫ</li>
+          <li><a href="#">ОБО МНЕ</a></li>
+          <li><a href="#">УСЛУГИ</a></li>
+          <li><a href="#">КЕЙСЫ</a></li>
+          <li><a href="#">ПРАЙС</a></li>
+          <li><a href="#">ОТЗЫВЫ</a></li>
+          <li><a href="#">КОНТАКТЫ</a></li>
         </ul>
       </div>
     </nav>
   </header>
-  <div class="main">
-    <div class="title_container">
+
+  <div class="main"><div class="title_container">
        <h1>ПРИВЕТ <br> Я Андрей Браун</h1>
        <h4>Фулл стек веб-пазработчик и Android - разрабочик</h4>
-       <input type="submit" value="Обо мне">
-       <input type="submit" value="Мои работы"> 
+       <input type="button" value="Обо мне">
+       <input type="button" value="Мои работы"> 
     </div>
   </div>
-
+<main>
        <div class="main_info">
        <h2>ОБО МНЕ</h2>
        <p class="b"></p>
@@ -75,9 +78,9 @@
       <h2>КЕЙСЫ</h2>
       <p class="b"></p>
       <h4>Lorem ipsum dolor sit amet, consectetur adipidcing elit. Duis sed Dapibus leo nec ornare diamcoccodo mibh ante facilisis.</h4>
-      <div class="img"><img src="img/фон2.png" alt=""></div>
+      <div class="img animate__animated animate__jackInTheBox"><img src="img/фон2.png" alt=""></div>
 
-      <div class="main_cases">
+      <div class="main_cases animate__animated animate__flipInX">
       <h3>CLIENT</h3>
       <p>Какая-то компания</p>
       <h3>WEBSITE</h3>
@@ -118,24 +121,24 @@
        </action>
       </div>
         </div>
+     
+        <div class="parallax">
+      <div class="parallax_content">
 
-      <div class="main_statistics">
         <h2>НЕМНОГО СТАТИСТИКИ</h2>
-        <p class="b"></p>
-        <div class="main_statisticss">
-          <div class="main__statisticss">
+          <div class="parallax__content">
            <img src="img/смайл.png" alt="smail">
            <div> <span>120</span><p>счастливых клиентов</p></div>
           </div>
-          <div class="main__statisticss">
+          <div class="parallax__content">
            <img src="img/галочка.png" alt="smail">
            <div><span>4,600</span><p>часов работы</p></div>
           </div>
-          <div class="main__statisticss">
+          <div class="parallax__content">
            <img src="img/галочка.png" alt="smail">
            <div><span>120</span><p>проектов завершено</p></div>
           </div>
-          <div class="main__statisticss">
+          <div class="parallax__content">
            <img src="img/кубок.png" alt="smail">
            <div><span>120</span><p>наград получино</p></div>
            </div>
@@ -176,9 +179,9 @@
          <p>+7 999 999 99 99</p>
         </div>
          </div>
-
+        
         <div class="formaa">
-         <h3>ОСТАВЬТЕ МНЕ СООЮЩЕНИЕ</h3>
+         <h3>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h3>
           <form action="#">
             <input type="text" class="formaa_input1" name="text_name" value="" placeholder="Имя">
             <input type="email" class="formaa_input" name="text_email" value="" placeholder="Email">
@@ -187,8 +190,15 @@
             <input type="submit" value="Отправить">
             </div>
           </form>
+         
+        </main>
+          <footer class="footer">
+            <img src="img/Карта.png" alt="карта">
+            <img src="img/Copyright © 2021 Андрей Браун. Design by Web.png" alt="">
+          </footer>
+        
         </div>
        </div>
-
+     
 </body>
 </html>

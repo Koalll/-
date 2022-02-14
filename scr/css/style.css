@@ -5,16 +5,29 @@ body {
 /* шапка  header*/
 
 nav{
+  position: fixed;
   width: 100%;
   height: 60px;
   background: #2f4667;
 }
+
 .logo{
   font-size: 22px;
   line-height: 60px;
   padding-left: 340px;
   color: #fff;
   float: left;
+  -webkit-animation: comming 2s ease; 
+  -o-animation: comming 2s ease;
+  animation: comming 2s ease;
+}
+@keyframes comming {
+  from {
+    opacity: 0;
+  }
+  ot {
+    opacity: 1;
+  }
 }
 .menu{
   float: left;
@@ -27,17 +40,82 @@ nav{
   margin-right: 40px;
   color: #fff;
   text-transform: uppercase;
+  -webkit-animation: topshift 0.4s ease forwards;
+  -o-animation: topshift 0.4s ease forwards;
+  animation: topshift 0.4s ease forwards;
+  opacity: 0;
 }
+@keyframes topshift {
+  from {
+    opacity: 0;
+    margin-top: -200px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+.menu li:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.menu li:nth-child(3) {
+  animation-delay: 0.8s;
+}
+.menu li:nth-child(4) {
+  animation-delay: 1.2s;
+}
+.menu li:nth-child(5) {
+  animation-delay: 1.6s;
+}
+.menu li:nth-child(6) {
+  animation-delay: 2s;
+}
+
 .main {
+  max-height: 1000px;
   width: 100%;
-  height: calc(100% - 60px);
-  background: url(../img/boy.png) 90% 100%/auto 85% no-repeat , url(../img/bg.jpg) center/cover no-repeat;
+  height:100%;
+  background: url(../img/boy.png) 90% 100% / auto 85% no-repeat , url(../img/bg.jpg) center/cover no-repeat;
 }
+.menu li a {
+  transition: all 0.3s;
+  transform: scale(1);
+  display: inline-block;
+  color: #fff;
+}
+.menu li a:visited {
+  color: #fff;
+}
+.menu li a:hover {
+  color: #f19823; 
+}
+.menu li a:active {
+  transform: scale(1.1);
+}
+
 .title_container  {
-  /* float: left;                   ошибка где то здесь */
+  float: left;                  
   margin: 430px 0px 0px 400px;
   text-align: center;
   color: #2c384a;
+  opacity: 0;
+  -webkit-animation: titvom 1s ease forwards;
+  -o-animation: titvom 1s ease forwards;
+  animation: titvom 1s ease forwards;
+  -webkit-animation-delay: titvom 2.2s ease;
+  -o-animation-delay: titvom 2.2s ease;
+  animation-delay: titvom 2.2s ease;
+  
+}
+@keyframes titvom {
+  from {
+    opacity: 0;
+    margin-left: -500px;
+  }
+  to {
+    opacity: 1;
+    margin-left: 430px;
+  }
 }
 .title_container h1 {
   font-size: 60px;
@@ -58,9 +136,23 @@ nav{
   font-size: 13px;
   padding: 0 20px;
   margin: 60px 15px;
+  transform: scale(1);
+  transition: all 0.2s;
+
+}
+.title_container input:hover {
+  background: #2f4667;
+  color: #fff;
+}
+.title_container input:active{
+  transform: scale(1.1);
 }
 
+
+
+
 /* моя информация main_info */
+
 
 .main_info h2 {
   font-size: 25px;
@@ -69,25 +161,88 @@ nav{
   text-transform: uppercase;
   font-weight: bold;
   color: #2f4667;
+  -webkit-animation: mainin 1s ease forwards;
+  -o-animation: mainin 1s ease forwards;
+  animation: mainin 1s ease forwards;
+  -webkit-animation-delay: mainin 2s ease;
+  -o-animation-delay: mainin 2s ease;
+  animation: mainin 2s ease;
 }
+@keyframes mainin {
+  from {
+    opacity: 0;
+    margin-right: -945px;
+  }
+  to {
+    opacity: 1;
+    margin-right: 0px;
+  }
+}
+
+
 .b {
   border: 3px solid  #d17700;
   width: 70px;
   margin-left: 945px;
-  
+  -webkit-animation: bor 1s ease forwards;
+  -o-animation: bor  1s ease forwards;
+  animation: bor 1s ease forwards;
+  -webkit-animation-delay: bor 2s ease;
+  -o-animation-delay: bor 2s ease;
+  animation: bor 2s ease;
+}
+@keyframes bor {
+  from {
+    opacity: 0;
+    margin-left: -800px;
+  }
+  to {
+    opacity: 1;
+    margin-left: 945px;
+  }
 }
 .main_info img {
   display: block;
   margin: 50px auto 25px auto;
-  
+  -webkit-animation: imer 1s ease forwards;
+  -o-animation: imer 1s ease forwards;
+  animation: imer1s ease forwards;
+  -webkit-animation-delay: imer 2s ease;
+  -o-animation-delay:imer 2s ease;
+  animation: imer 2s ease;
+}
+@keyframes imer {
+  from {
+    opacity: 0;
+    margin-right: 0px;
+  }
+  to {
+    opacity: 1;
+    margin-right: 883px;
+  }
 }
 .main_info h4 {
   font-size: 15px;
   color: #3f495a;
   margin-left:600px;
   padding-bottom: 35px;
+  -webkit-animation: opi 1s ease forwards;
+  -o-animation: opi  1s ease forwards;
+  animation: opi 1s ease forwards;
+  -webkit-animation-delay: opi 2s ease;
+  -o-animation-delay: opi 2s ease;
+  animation: opi 2s ease;
 }
-
+@keyframes opi {
+  from {
+    opacity: 0;
+    margin-left: -400px;
+  }
+  to {
+    opacity: 1;
+    margin-left: 600px;
+  }
+}
 .main_info input {
  margin: 0 0 100px 910px;
  height: 30px;
@@ -97,7 +252,13 @@ nav{
  border-radius: 3px;
  color: #79818d;
  background: url(../img/dow.png) 7% no-repeat;
-
+ transition: all 0.5s;
+  transform: scale(1);
+}
+.main_info input:hover {
+  border: 2px solid #78dbab;
+  background: url(../img/dow.png) 7% no-repeat;
+  transform: scale(1.1);
 }
 
 /* что я имею main_work */
@@ -111,11 +272,25 @@ nav{
   font-size: 25px;
   text-align: center;
   padding: 105px 0 30px 0;
-  
   font-weight: bold;
   color: #2f4667;
+  -webkit-animation: work 1s ease forwards;
+  -o-animation: work  1s ease forwards;
+  animation: work  1s ease forwards;
+  -webkit-animation-delay: work  2s ease;
+  -o-animation-delay:work  2s ease;
+  animation: work 2s ease;
 }
-
+@keyframes work {
+  from {
+    opacity: 0;
+    margin-right: -945px;
+  }
+  to {
+    opacity: 1;
+    margin-right: 0px;
+  }
+}
 .main_works {
    margin: 110px 0 0 420px;
    height: 420px;
@@ -125,7 +300,24 @@ nav{
   float: left;
   text-align: center;
   margin-right: 85px;
+  -webkit-animation: wor 2s ease forwards;
+  -o-animation: wor 2s ease forwards;
+  animation: wor 2s ease forwards;
+  opacity: 0;
+  
 }
+
+@keyframes wor {
+  from {
+    opacity: 0;
+    margin-left: -900px;
+  }
+  to {
+    opacity: 1;
+    margin-left:0px;
+  }
+}
+
 .main__works h3 {
   color: #d17700;
   font-size: 18px;
@@ -136,6 +328,19 @@ nav{
    font-size: 16px;
    line-height: 1.2em;
 }
+.main__works :nth-child(2) {
+  animation-delay: 0.5s ease;
+}
+.main__works :nth-child(3) {
+  animation-delay: 1s ease;
+}
+.main__works :nth-child(4) {
+  animation-delay:1.5s ease;
+}
+.main__works :nth-child(5) {
+  animation-delay: 2s ease;
+}
+ 
 
 /* мои кейсы main_case */
 
@@ -149,14 +354,46 @@ nav{
   padding: 105px 0 30px 0;
   font-weight: bold;
   color: #2f4667;
+  -webkit-animation: work 1s ease forwards;
+  -o-animation: work  1s ease forwards;
+  animation: work  1s ease forwards;
+  -webkit-animation-delay: work  2s ease;
+  -o-animation-delay:work  2s ease;
+  animation: work 2s ease;
+  
+}
+@keyframes work {
+  from {
+    opacity: 0;
+    margin-right: -945px;
+  }
+  to {
+    opacity: 1;
+    margin-right: 0px;
+  }
 }
 .main_case h4 {
    color: #4b5565;
    font-size: 16px;
    text-align: center;
    margin: 35px 0 40px 0;
+   -webkit-animation: kei 1s ease forwards;
+   -o-animation: kei 1s ease forwards;
+   animation: kei1s ease forwards;
+   -webkit-animation-delay: kei 2s ease;
+   -o-animation-delay: kei 2s ease;
+   animation: kei 2s ease;
 }
-  
+@keyframes kei {
+from {
+  opacity: 0;
+  margin-left: -800px;
+}
+to {
+  opacity: 1;
+  margin-left: 0px;
+}
+}
  
 .main_cases {
   float: left;
@@ -206,6 +443,23 @@ nav{
  .main__payment {
    margin-left: 495px;
    padding-bottom: 156px;
+   opacity: 1;
+   -webkit-animation: paymen 1s ease forwards;
+   -o-animation: paymen 1s ease forwards;
+   animation: paymen 1s ease forwards;
+   -webkit-animation-delay: paymen 2s ease;
+   -o-animation-delay: paymen 2s ease;
+   animation: paymen 2s ease;
+ }
+ @keyframes paymen {
+   from {
+     opacity: 0;
+     margin-left: -500px;
+   }
+   to {
+     opacity: 1;
+     margin-right: 330px;
+   }
  }
  .main__payment h3 {
   font-size: 30px;
@@ -221,7 +475,30 @@ nav{
    background: #eeeeee;
    padding: 23px 5px 23px 5px;
    margin-bottom: 37px;
+   opacity: 1;
+   -webkit-animation: paymen 1s ease forwards;
+   -o-animation: paymen 1s ease forwards;
+   animation: paymen 1s ease forwards;
+   -webkit-animation-delay: paymen 2s ease;
+   -o-animation-delay: paymen 2s ease;
+   animation: paymen 2s ease;
+   
  }
+ .main__payment select:hover{
+   border: 1px solid #4cb4ab;
+   transform: calc(0.5);
+ }
+ 
+ @keyframes paymen {
+  from {
+    opacity: 0;
+    margin-left: -500px;
+  }
+  to {
+    opacity: 1;
+    margin-right: 330px;
+  }
+}
  .pol {
    border: 2px solid #d1d1d1;
    width: 860px;
@@ -241,41 +518,50 @@ nav{
 
 /* моя статистика main_statistics */
 
-.main_statistics {
+
+
+.parallax{
  background: url(../img/фон\ статик.png) center/cover no-repeat;
+ background-attachment: fixed;
  height: 500px;
- 
+ margin: 0;
+
 }
-.main_statistics h2 {
+
+
+.parallax_content h2 {
     font-weight: bold;
-    text-align: center;
-    font-size: 45px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    margin-left: 300px;
+    font-size: 40px;
     color: #2c384a;
-    padding: 105px 0 33px 0;
-}
-.main_statisticss {
-  margin: 88px 0 0 430px;
+    
   
 }
-.main__statisticss {
+.parallax_content {
+  margin: 10px 0 0 430px;
+  
+}
+.parallax__content {
   width: 215px;
   float: left;
   text-align: center;
-  margin-right: 85px;
+  margin: 90px 85px 0 0;
   
 }
-.main__statisticss img {
+.parallax__content img {
   margin-bottom: 30px;
 }
-.main__statisticss span {
+.parallax__content span {
    font-weight: bold;
-   font-size: 40px;
+   font-size: 30px;
    color: #323e4f;
 }
-.main__statisticss p {
+.parallax__content p {
   font-size: 20px;
   color: #323e4f;
-  padding-top: 30px;
+  padding-top: 10px;
 }
 
 /* отзывы main reviews */
@@ -287,12 +573,42 @@ nav{
   color: #2c384a;
   padding: 100px 0 0px 0;
   margin-bottom: 30px;
-  
+  -webkit-animation: work 1s ease forwards;
+  -o-animation: work  1s ease forwards;
+  animation: work  1s ease forwards;
+  -webkit-animation-delay: work  2s ease;
+  -o-animation-delay:work  2s ease;
+  animation: work 2s ease;
 }
-
+@keyframes work {
+  from {
+    opacity: 0;
+    margin-right: -945px;
+  }
+  to {
+    opacity: 1;
+    margin-right: 0px;
+  }
+}
 .main_reviews {
   background: url(../img/фотка.png) center  no-repeat;
-  
+  -webkit-animation: fotor 1s ease forwards;
+  -o-animation: fotor 1s ease forwards;
+  animation: fotor 1s ease forwards;
+  -webkit-animation-delay: fotor 2s ease;
+  -o-animation-delay: fotor 2s ease;
+  animation-delay: fotor 2s ease;
+  opacity: 0;
+}
+@keyframes fotor {
+  from {
+    opacity: 0;
+    margin-right: -500px;
+  }
+  to {
+    opacity: 1;
+    margin-right: 0;
+  }
 }
 .main__reviews {
   padding: 80px;
@@ -309,8 +625,23 @@ nav{
 
 .round {
 margin-left: 800px;
-
-
+-webkit-animation: for 1.8s ease forwards;
+  -o-animation: for 1.8s ease forwards;
+  animation: for 1.8s ease forwards;
+  -webkit-animation-delay: for 3s ease;
+  -o-animation-delay: for 3s ease;
+  animation-delay: for 2.5s ease;
+  opacity: 0;
+}
+@keyframes for {
+  from {
+    opacity: 0;
+    margin-left: -800px;
+  }
+  to {
+    opacity: 1;
+   margin-left: 800px;
+  }
 }
 .round_ondd {
   float: left;
@@ -350,6 +681,22 @@ margin-left: 800px;
   letter-spacing:1px;
   padding: 100px 0 0px 0;
   margin-bottom: 30px;
+  -webkit-animation: work 1s ease forwards;
+  -o-animation: work  1s ease forwards;
+  animation: work  1s ease forwards;
+  -webkit-animation-delay: work  2s ease;
+  -o-animation-delay:work  2s ease;
+  animation: work 2s ease;
+}
+@keyframes work {
+  from {
+    opacity: 0;
+    margin-right: -945px;
+  }
+  to {
+    opacity: 1;
+    margin-right: 0px;
+  }
 }
 .main_contac_p {
   font-size: 16px;
@@ -360,7 +707,22 @@ margin-left: 800px;
 
 .main__contacts {
   margin-left: 655px;
-  
+  -webkit-animation: contac 1s ease forwards;
+  -o-animation: contac 1s ease forwards;
+  animation: contac 1s ease forwards;
+  -webkit-animation-delay: contac 2s ease;
+  -o-animation-delay: contac 2s ease;
+  animation: contac 2s ease;
+}
+@keyframes contac {
+  from {
+    opacity: 0;
+    margin-left: -500px;
+  }
+    to {
+      opacity: 1;
+      margin-left: 655px;
+    }
 }
 .main__contacts p{
   margin-top: 25px;
@@ -377,9 +739,7 @@ margin-left: 800px;
   letter-spacing: 0.5px;
   margin: 30px 0 45px 0;
 }
-.formaa {
 
-}
 .formaa_input1 {
   width: 353px;
   height: 33px;
@@ -403,7 +763,7 @@ padding: 7px;
 margin: 18px 0 30px 620px;
 }
 .sub input {
-width: 133px;
+width: 135px;
 padding: 16px;
 margin-left: 920px;
 text-align: center;
@@ -412,4 +772,16 @@ color: #fff;
 background: no-repeat;
 border: 3px solid #fff;
 border-radius: 3px;
+transform: scale(1);
+transition: all 0.4s;
 }
+.sub input:hover {
+  transform: scale(1.2);
+}
+.footer img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
