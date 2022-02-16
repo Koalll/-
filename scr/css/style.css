@@ -11,6 +11,7 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  opacity: 0;
 }
 #preloader_content {
   position: relative;
@@ -151,18 +152,16 @@ nav{
   text-align: center;
   color: #2c384a;
   opacity: 0;
-  -webkit-animation: titvom 1s ease forwards;
-  -o-animation: titvom 1s ease forwards;
+ 
   animation: titvom 1s ease forwards;
-  -webkit-animation-delay: titvom 2.2s ease;
-  -o-animation-delay: titvom 2.2s ease;
-  animation-delay: titvom 2.2s ease;
+  
+  animation-delay: titvom 2.5s;
   
 }
 @keyframes titvom {
   from {
     opacity: 0;
-    margin-left: -500px;
+    margin-left: -400px;
   }
   to {
     opacity: 1;
