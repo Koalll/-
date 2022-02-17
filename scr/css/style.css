@@ -152,16 +152,17 @@ nav{
   text-align: center;
   color: #2c384a;
   opacity: 0;
- 
+  -webkit-animation: titvom 1s ease forwards;
+  -o-animation: titvom 1s ease forwards;
   animation: titvom 1s ease forwards;
   
-  animation-delay: titvom 2.5s;
+  animation-delay: 3s ;
   
 }
 @keyframes titvom {
   from {
     opacity: 0;
-    margin-left: -400px;
+    margin-left: -500px;
   }
   to {
     opacity: 1;
@@ -215,9 +216,9 @@ nav{
   -webkit-animation: mainin 1s ease forwards;
   -o-animation: mainin 1s ease forwards;
   animation: mainin 1s ease forwards;
-  -webkit-animation-delay: mainin 2s ease;
-  -o-animation-delay: mainin 2s ease;
-  animation: mainin 2s ease;
+  -webkit-animation-delay:  2s ease;
+  -o-animation-delay: 2s ease;
+  animation: 2s ease;
 }
 @keyframes mainin {
   from {
