@@ -16,6 +16,14 @@
 
 <body>
  
+  <div id="proloader">
+    <div id="preloader_content">
+    <div id="preloader_first"></div>
+    <div id="preloader_second"></div>
+    <div id="preloader_third"></div>
+    </div>
+  </div>
+
   <header class="header">
     <div class="container-fluid">
 
@@ -108,23 +116,23 @@
   <div class="b"></div>
   </div>
 
-  <div class="con_info d-flex justify-content-around ">
-  <div class="row col col-xl-3 col-md-3 col-sm-3 justify-content-center">
+  <div class="con_info d-flex justify-content-around flex-wrap">
+  <div class="row col col-xl-3 col-md-3 col-sm-6 justify-content-center">
     <i class="fa fa-laptop fa-3x" aria-hidden="true"></i>
     <h5>Веб-дизайн</h5>
     <p class="web">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis laborum dignissimos vel? </p>
   </div>
-  <div class="row col col-xl-3 col-md-3 col-sm-3 justify-content-center">
+  <div class="row col col-xl-3 col-md-3 col-sm-6 justify-content-center">
     <i class="fa fa-code fa-fw fa-3x" aria-hidden="true"></i>
     <h5>Разработка</h5>
     <p class="web">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis laborum dignissimos vel? </p>
   </div>
-  <div class="row col col-xl-3 col-md-3 col-sm-3 justify-content-center">
+  <div class="row col col-xl-3 col-md-3 col-sm-6 justify-content-center">
     <i class="fa fa-rocket fa-fw fa-3x" aria-hidden="true"></i>
     <h5>CEO-Оптимизация</h5>
     <p class="web">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis laborum dignissimos vel? </p>
   </div>
-  <div class="row col col-xl-3 col-md-3 col-sm-3 justify-content-center">
+  <div class="row col col-xl-3 col-md-3 col-sm-6 justify-content-center">
     <i class="fa fa-bullhorn fa-fw fa-3x" aria-hidden="true"></i>
     <h5>Маркетинг</h5>
     <p class="web">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis laborum dignissimos vel? </p>
@@ -137,7 +145,7 @@
 
 <section class="case">
   <div class="container_case">
- <div class="row col col-xl-12 d-flex justify-content-center">
+ <div class="row col col-xl-12 col-md-12 d-flex justify-content-center">
   <h3 class="head">кейсы</h3>
   <div class="b"></div>
   <p class="case_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut aspernatur explicabo eius aliquid quia corrupti obcaecati? </p>
@@ -145,13 +153,13 @@
  </div>
   </div>
 
- <div class="container d-flex">
- <div class="row col col-xl-3 d-flex animate__animated animate__jello">
+ <div class="container d-flex flex-wrap">
+ <div class="row col col-xl-3 col-lg-4 d-flex">
  <h4 class="comp">clint</h4> <p class="comp_p">Какая-то компания</p>
  <h4 class="comp">website</h4> <p class="comp_p">http://www.sonedomain.com</p>
- <div class="site"><a href="#">Перейти на сайт</a></div>
+ <div class="site animate__animated animate__jello d-flex align-items-center"><a href="#">Перейти на сайт</a></div>
  </div>
- <div class="row col col-xl-9">
+ <div class="row col col-xl-9 col-lg-8">
  <h5 class="comp_text">Название проекта</h5>
  <p class="comp__p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab porro unde nisi consequatur, expedita vitae aspernatur voluptates id. Consectetur recusandae eius nam vel ipsa cumque harum deserunt quidem iusto quia.</p>
  </div>
@@ -239,13 +247,13 @@
     </div>
   </section>
 
-<footer class="contacts">
+<section class="contacts">
   <div class="container-fluid4">
-     <div class="row col col-xl-12 d-flex justify-content-center">
+     <div class="row col col-xl-12 col-lg-12 d-flex justify-content-center">
       <h3 class="head_fot">мои контакты</h3>
       <div class="b"></div>
          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa animi beatae ut veniam quasi sequi reiciendis? </span>
-         <div class="contact_map d-flex justify-content-center">
+         <div class="contact_map flex-wrap d-flex justify-content-center">
          <div class="contact">
           <i class="fa fa-map-marker fa-fw fa-2x" aria-hidden="true"></i>
           <div> <p>Сант-Перербург <br> Невский проспект 11</p></div>
@@ -259,10 +267,31 @@
           <div> <p>+7 999 999 99 99</p></div>
          </div>
          </div>
+         <div class="poser">оставьте мне сообщение </div>
+         
+         <div class="row col-xl-6 g-3 otprav">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Имя" aria-label="Имя">
+          </div>
+          <div class="col">
+            <input type="email" class="form-control" id="floatingInput" placeholder="Email">
+          </div>
+        <div class="form-floating">
+          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+          <label for="floatingTextarea2">Сообщение</label>
+        </div>
+        <div class="otprav_otp"><a href="#">Оставить</a></div>
+         </div>
      </div>
   </div>
+</section>
+<footer>
+  <div class="row col-xl-12 "></div>
+  <div class="container-fluid_map"></div>
+  <div class="container-fluid_footer">
+   <div class="port_footer d-flex justify-content-center"> Copyright @ 2021 Андрей Браун. Design by Web</div>
+  </div>
 </footer>
-
 
 
 

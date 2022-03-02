@@ -19,6 +19,60 @@
 	font-weight: normal;
 	font-style: normal;
 }
+
+#proloader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #384354;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+}
+#preloader_content {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  
+  
+
+}
+#preloader_first,
+#preloader_second,
+#preloader_third {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  animation: 1s infinite linear;
+}
+#preloader_first {
+    border-top: 2px solid #d17700;
+    animation-name: first;
+}
+#preloader_second {
+  border-right: 2px solid #4cb4ab;
+  animation-name: second;
+}
+#preloader_third{
+  border-bottom: 2px solid #a6db42;
+  animation-name: third;
+}
+@keyframes first {
+  0% {transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);}
+  100% {transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);}
+}
+@keyframes second {
+  0% {transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);}
+  100% {transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);}
+}
+@keyframes third {
+  0% {transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);}
+  100% {transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);}
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
@@ -42,7 +96,7 @@ h3 {
 
 .main {
  background: url(../img/boy1.png) 90% 100% / auto 85% no-repeat,url(../img/fon1.png) center/cover no-repeat;
-  height: 900px;
+ padding-bottom: 300px;
   
 }
 .container-fluid {
@@ -186,16 +240,16 @@ transition: all 0.3s;
   .main_titel, .main_text, .input_text {
     color: #fff;
     border-color: chartreuse;
-    z-index: 6;
+    z-index: 1;
     
   }
   
-
+ 
 .main {
   position: relative;
   
 }
-.main::after {
+.main::before {
   content: "";
   bottom: 0;
   top: 0;
@@ -203,14 +257,14 @@ transition: all 0.3s;
   right: 0;
   position: absolute;
   background: rgba(0,0,0,0.4);
-  z-index: 1;
+  z-index: 0;
 }
  }
 
  /* обо мне */
 
  .work {
-   height: 717px;
+   padding: 60px;
    
  }
 
@@ -304,8 +358,8 @@ transition: all 0.3s;
  /* что я умею */
 
  .container-fluid_2 {
-   background: url(../img/fon2.png)center no-repeat;
-   height: 525px;
+   background: url(../img/fon2.png) center/cover no-repeat;
+   padding: 90px;
    width: 100%;
  }
  .con_info {
@@ -356,18 +410,18 @@ transition: all 0.3s;
  /* кейсы */
 
  .case {
-   height: 1400px;
+   padding: 140px;
  }
 
  .case_p {
    font-size: 16px;
    color: #5f6c7c;
    text-align: center;
-   margin: 35px 0 45px 0;
+   padding: 25px 0 0 0;
  }
  .case_img {
-   background: url(../img/fon3.png) no-repeat;
-   height: 811px;
+   background: url(../img/fon3.png) center  no-repeat;
+   padding: 500px;
  }
  .comp  {
   font-size: 25px;
@@ -391,6 +445,7 @@ transition: all 0.3s;
   padding: 15px 35px;
   transform: scale(1);
   transition: all 0.4s;
+  
  }
  .site a:hover {
    color: floralwhite;
@@ -519,8 +574,10 @@ transition: all 0.3s;
 
  
  .parallax {
-background: url(../img/fon4.png) no-repeat;
-height: 500px;
+background: url(../img/fon4.png) center/cover no-repeat;
+padding: 100px;
+background-attachment: fixed;
+
  }
  .parallax_content {
  margin-top: 85px;
@@ -596,30 +653,31 @@ opacity: 0;
 /* контакты */
 
 .container-fluid4 {
-  background: url(../img/fon5.png)  center no-repeat;
-  height: 800px;
+  background: url(../img/fon5.png)  center/cover no-repeat;
+  
 }
 .head_fot {
   color: #fff;
   text-transform: uppercase;
   font-size: 33px;
   font-family: FranklinGot;
-  margin: 100px 0 40px 0;
+  margin: 90px 0 40px 0;
 }
 .contacts span {
   color: #fff;
   font-size: 16px;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 30px;
 
 }
 .contact_map {
-  margin-top: 90px;
+  margin: 50px 0 40px 0;
   text-align: center;
 }
+
 .contacts i {
   color: #fff;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .contacts p {
   color: #fff;
@@ -627,4 +685,57 @@ opacity: 0;
 }
 .contact:nth-child(2) {
 margin:  0 80px;
+}
+.poser {
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.otprav {
+  font-family: FranklinGot;
+}
+.otprav_otp {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 170px;
+}
+.otprav_otp a {
+  
+ font-size:20px;
+ font-family: MyriaPro;
+ background: none;
+ border:2px solid #f5f7f8;
+ color: #fff;
+ border-radius: 3px;
+ padding: 15px 35px;
+ transform: scale(1);
+ transition: all 0.4s;
+}
+.otprav_otp a:hover {
+  color: floralwhite;
+  
+}
+.otprav_otp:active {
+ transform: scale(1.1);
+}
+
+/* footer */
+
+.container-fluid_map {
+  background: url(../img/map.png) center/cover no-repeat;
+  padding: 250px;
+}
+.container-fluid_footer {
+  background: #2c3e51;
+  padding:40px;
+}
+.port_footer {
+  color: #fff;
+  font-size: 16px;
+  display: block;
+  text-align: center;
+  
 }
